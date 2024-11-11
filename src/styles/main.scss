@@ -1,0 +1,378 @@
+* {
+    font-family: "Poppins", sans-serif;
+    
+    font-size: 25px;
+    color: #e8e9ea;
+    transition-duration: 0.5s;
+}
+
+body {
+    background-color: #1e252b;
+    // margin-left: 3vw;
+    // margin-right: 3vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    font-weight: 700;
+    grid-column: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1%
+}
+
+#title {
+    margin: 0.5vw;
+    color: #e8e9ea
+}
+
+#menu {
+    font-weight: 400;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #9a9da0;
+}
+
+li {
+    color: #9a9da0;
+    margin: 1vw;
+    display: inline;
+}
+
+.button {
+    font-weight: 600;
+    color: #9a9da0;
+    background: none;
+    border: none;
+    margin-right: 2vw;
+}
+
+.highlightedButton {
+    font-weight: 600;
+    color: #FDF5FF;
+    background-color: #ff6e30;
+    border-radius: 10px;
+    height: 6vh;
+    width: 9vw;
+    border-color: #ff6e30;
+    border-style: solid;
+    
+}
+
+.block1 {
+    // margin-top: 0.5%;
+    display: flex;
+    padding-left: 3%;
+    // padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 0;
+}
+
+.block1Text {
+    display: inline;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.block1Description {
+    margin-right: 20%;
+    color: #9a9da0
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#mock1 {
+    width: 50%;
+    float: right
+}
+
+
+.redDot {
+    color: red;
+    display: inline;
+    font-size: 70px;
+}
+
+.searchBox {
+    margin-top: 8%;
+    background-color: #283036;
+    // width: 54%;
+    height: 7vh;
+    font-size: 25px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    padding: 1%;
+    max-width: 80%;
+    justify-content: space-between;
+    // justify-content: stretch;
+}
+
+.searchIcon {
+    margin-right: 2%;
+    margin-left: 3%;
+}
+
+input {
+    background-color: #283036;
+    // border: none;
+    border-radius: 5px;
+    border: none;
+    // margin-left: 2%;
+    // margin-right: 2%;
+    height: 7vh;
+    // width: 150%;
+    // width: 500%;
+    width: 400px;
+    background: none;
+}
+
+input:focus {
+    outline: none;   
+}
+
+.socials {
+    margin-top: 10%;
+}
+
+.iconHighlighted {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(3%) saturate(105%) hue-rotate(155deg) brightness(95%) contrast(92%);
+    margin-right: 5%;
+}
+
+.icon {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(287%) hue-rotate(164deg) brightness(100%) contrast(91%);
+}
+
+.popularTools {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popularToolsDescription {
+    color: #9a9da0;
+    width: 30%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.toolsGrid {
+    display: grid;
+    // grid-area: 1 / 1 / span 3 / span 3;
+    // grid: auto auto auto;
+    // grid-area: 1 / 1 / 3 / 3;
+    grid-template-columns: auto auto auto;
+
+    
+}
+
+// overflow: hidden;
+    // margin-top: 25%;
+    // padding: 10px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: start;
+    // width: 450px;
+    // // height: 300px;
+    // margin-right: 2vw;
+    // margin-left: 2vw;
+    // border-radius: 20px;
+    // position: relative;
+
+.toolCard {
+    border-radius: 20px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    // margin: 10px;
+    padding: 0.5em
+    
+}
+
+.toolCard:hover {
+    background-color: #242C32;
+    transition-duration: 0s;
+}
+
+.gradientBorder {
+    overflow: hidden;
+    margin-top: 25%;
+    padding: 1px;
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    align-items: start;
+    // height: 300px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradientBorder:hover {
+    background: linear-gradient(30deg, #242C32, #763E26);
+    // margin: 3px;
+}
+
+.toolCardUpperBody {
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.itemDescription {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items:flex-start;
+    width: 100%
+}
+
+
+.toolTitle {
+    font-weight: 500;
+    margin: 0px;
+    // margin-left: 10%;
+    // margin-top: 5%;
+    font-size: 30px;
+    width: 150%;
+    color: #CDCFD0;
+}
+
+.toolCard:hover .toolTitle {
+    color: white;
+}
+
+.toolIsPaid {
+    margin: 0px;
+    // margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+    color: #9A6B32;
+    font-size: 17px;
+    width: 150%;
+}
+
+.toolCard:hover .toolIsPaid{
+    color: #FFA537;
+}
+
+.toolLogo {
+    margin: 10%;
+}
+
+.description {
+    text-align: left;
+    margin: 10%;
+    margin-left: 0;
+    margin-top: 15%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #9a9da0;
+}
+
+.toolCard:hover .description {
+    color: white;
+}
+
+.toolCardLowerBody {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.ellipse {
+    opacity: 0;
+    // position: fixed;
+    // position:static;
+    position: absolute;
+    right: -150px;
+    top: -150px;
+    // border-radius: 50px;
+    filter: blur(50px)
+    
+    
+}
+
+.toolCard:hover .ellipse {
+    opacity: 1;
+}
+
+.loadMoreBtn {
+    margin-top: 5%;
+    color: #ff6e30;
+    font-weight: 400;
+    background-color: #1e252b;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #343B40;
+    border-radius: 10px;
+    padding: 18px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+footer {
+    // border: white;
+    border-color: #1e252b;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    margin-top: 8%;
+    background-color: #21282F;
+    width: 90%;
+    margin-bottom: 3%
+}
+
+.footerText {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3%;
+}
+
+.partnersNames {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    // justify-content: space-evenly;
+    justify-content: space-around;
+    // width: 70%;
+}
+
+.partnerName {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(17%) saturate(179%) hue-rotate(165deg) brightness(93%) contrast(96%);
+}
+
+.partnerName::after {
+    // content: ""; // ::before and ::after both require content
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    // opacity: .7;
+}
