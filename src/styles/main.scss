@@ -169,11 +169,23 @@ input:focus {
 
 .socials {
     margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-right: -15em;
 }
 
 .iconHighlighted {
     filter: brightness(0) saturate(100%) invert(87%) sepia(3%) saturate(105%) hue-rotate(155deg) brightness(95%) contrast(92%);
     margin-right: 5%;
+}
+
+.iconHighlighted img {
+    position: fixed;
+    margin-right: 10em;
+}
+
+.iconHighlighted:hover img {
+    height: 2.5em;
 }
 
 .icon {
