@@ -230,9 +230,10 @@ input:focus {
 }
 
 .gradientBorder:hover {
-    background: linear-gradient(30deg, #242C32, #763E26);
+    background: linear-gradient(15deg, #242C32, #763E26);
     // margin: 3px;
 }
+
 
 .toolCardUpperBody {
     height: 3px;
@@ -306,15 +307,17 @@ input:focus {
 
 .ellipse {
     opacity: 0;
-    // position: fixed;
-    // position:static;
     position: absolute;
     right: -150px;
     top: -150px;
-    // border-radius: 50px;
     filter: blur(50px)
-    
-    
+}
+
+.ellipseLeft {
+    position: absolute;
+    left: -150px;
+    top: -150px;
+    filter: blur(50px)
 }
 
 .toolCard:hover .ellipse {
@@ -335,16 +338,40 @@ input:focus {
     padding-right: 43px;
 }
 
-footer {
+.staticGradientBorder {
+    overflow: hidden;
+    position: relative;
     // border: white;
     border-color: #1e252b;
     border-width: 1px;
     border-style: solid;
     border-radius: 25px;
-    margin-top: 8%;
-    background-color: #21282F;
+    // margin-top: 8%;
+    // background-color: #21282F;
     width: 90%;
-    margin-bottom: 3%
+    // margin-bottom: 3%;
+    padding: 0;
+    margin-top: 7em;
+    margin-bottom: 3em;
+    // margin-right: 0;
+
+    background: linear-gradient(-15deg, #242C32, #763E26);
+}
+
+footer {
+    overflow: hidden;
+    position: relative;
+    // border: white;
+    border-color: #1e252b;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    // margin-top: 8%;
+    background-color: #21282F;
+    width: 100%;
+    margin-right: 0;
+    margin: 1px;
+    // margin-bottom: 3%
 }
 
 .footerText {
