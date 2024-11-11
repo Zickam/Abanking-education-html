@@ -146,21 +146,40 @@ h1 {
     justify-items: start;
     padding: 1%;
     max-width: 80%;
-    justify-content: space-between;
+    justify-content:stretch;
+    position: relative;
 }
+
 
 .searchIcon {
     margin-right: 2%;
     margin-left: 3%;
 }
 
-input {
+.searchInput {
+    position: relative;
     background-color: #283036;
     border-radius: 5px;
     border: none;
     height: 7vh;
-    width: 400px;
     background: none;
+}
+
+.searchBtn {
+    position: absolute;
+    right: 2%;
+    font-weight: 600;
+    color: #FDF5FF;
+    background-color: #ff6e30;
+    border-radius: 10px;
+    height: 6vh;
+    width: 9vw;
+    border-color: #ff6e30;
+    border-style: solid;
+}
+
+.searchBtn:hover {
+    color: #1e252b;
 }
 
 input:focus {
@@ -190,6 +209,15 @@ input:focus {
 
 .icon {
     filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(287%) hue-rotate(164deg) brightness(100%) contrast(91%);
+}
+
+.iconLike {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(287%) hue-rotate(164deg) brightness(100%) contrast(91%);
+}
+
+.iconLike:hover {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(98%) saturate(4561%) hue-rotate(342deg) brightness(120%) contrast(98%);
+    height: 1.2em
 }
 
 .popularTools {
