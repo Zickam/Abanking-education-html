@@ -7,9 +7,8 @@
 }
 
 body {
+    // cursor: none;
     background-color: #1e252b;
-    // margin-left: 3vw;
-    // margin-right: 3vw;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,15 @@ body {
 div {
     align-items: center;
     display: flex;
+}
+
+#move {
+    position: fixed;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    transition: 0s linear;
+    z-index: 1;
+    pointer-events: none;
 }
 
 nav {
@@ -379,11 +387,8 @@ input:focus {
 footer {
     overflow: hidden;
     position: relative;
-    // border: white;
-    border-color: #1e252b;
-    border-width: 1px;
-    border-style: solid;
     border-radius: 25px;
+    border: none;
     background-color: #21282F;
     width: 100%;
     margin-right: 0;
